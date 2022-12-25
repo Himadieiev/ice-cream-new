@@ -1,0 +1,230 @@
+.container {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
+
+.contacts-ice {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 54px;
+  }
+
+
+}
+
+.contacts-ice__list {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  @media screen and (min-width: 768px) {
+    margin: -8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: -16px;
+  }
+}
+
+
+.contacts-ice__item {
+
+  padding: 40px 32px 24px 32px;
+  background-color: $sixth-txcolor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+    //Расчет ширины элемента (100% - количество марджинов в строке * значение марджина)/ кол-во элементов в строке
+    width: calc((100% - 6 * 8px)/3);
+    margin: 8px;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+    width: calc((100% - 6 * 16px)/3);
+    margin: 16px;
+  }
+}
+
+.address-ice__type {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: $second-txcolor;
+
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}
+
+.address-ice__city {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $second-txcolor;
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.address-ice__type--color {
+  padding: 4px 22px;
+  background-color: $fifth-bgcolor;
+  border-radius: 6px;
+
+
+  @media screen and (min-width: 767px) {
+    padding: 4px 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
+}
+
+.address-ice__info {
+  color: $third-txcolor;
+  margin-bottom: 24px;
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.schedule-ice__time {
+  color: $fourth-txcolor;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.schedule-ice {
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 24px 0;
+  font-size: 12px;
+  line-height: 1.83;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+
+.connection-ice {
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.connection-ice__item {
+  color: $second-txcolor;
+  display: block;
+  font-size: 12px;
+  line-height: 1.58;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+
+    @media screen and (min-width: 767px) {
+      margin-bottom: 4px;
+    }
+
+  }
+}
