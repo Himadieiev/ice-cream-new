@@ -10,7 +10,6 @@
 }
 
 .local-franch__button.btn {
-
   &-two,
   &-one {
     display: flex;
@@ -45,7 +44,6 @@
     }
   }
 }
-
 .local-franch__arrow {
   fill: $seventh-txcolor;
   display: block;
@@ -54,7 +52,6 @@
   height: 10px;
   margin-left: 8px;
 }
-
 .icon-arrow {
   fill: $seventh-txcolor;
 }
@@ -65,7 +62,6 @@
   visibility: hidden;
   pointer-events: none;
 }
-
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!BACKDROP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -136,7 +132,6 @@
   border: none;
   background: inherit;
   fill: $second-txcolor;
-
   &:hover {
     cursor: pointer;
   }
