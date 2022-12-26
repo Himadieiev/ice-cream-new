@@ -1,22 +1,25 @@
-.backdrop {
+.backdrop__products {
   position: fixed;
-  left: 0px;
-  top: 0px;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $tr-delay $tr-timing-function;
+  overflow-y: scroll;
 
 }
 
-.backdrop.is-hidden {
+.backdrop__products.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  
 }
 
-.backdrop .is-hidden .modal {
+.backdrop__products .is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -26,7 +29,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  padding: 28px 28px;
+  padding: 20px 20px;
   // width: 568px;
 
   background: $modal-bgcolor;
@@ -35,6 +38,7 @@
 
   @media screen and (min-width: 480px) {
     width: 280px;
+    overflow-y: scroll;
   }
 
   @media screen and (min-width: 768px) {
@@ -74,8 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border: none;
   background: transparent;
   cursor: pointer;
 
@@ -114,6 +117,13 @@
   gap: 9px;
   margin-bottom: 40px;
   display: flex;
+  
+  @media screen and (min-width: 768px)
+  {
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+  
 }
 
 .products-modal__wrapper {
@@ -157,7 +167,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 12px;
+  line-height: calc(12 / 10);
   display: flex;
   align-items: center;
   text-align: center;
@@ -177,7 +187,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: calc(28 /20);
 
   color: $second-txcolor;
 }
@@ -297,11 +307,11 @@
   position: relative;
   overflow: hidden;
 
-  font-family: $second-font;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: calc(17 / 14);
 
   text-align: center;
   padding: 12px 34px;
@@ -312,4 +322,13 @@
   color: $second-txcolor;
 
   transition: color $tr-delay $tr-timing-function, background-color $tr-delay $tr-timing-function;
+  &:hover {
+      background-color: $hover-focus-color;
+    }
+  
+    &:focus {
+      background-color: $hover-focus-color$hover-focus-color;
+      color: $sixth-txcolor;
+    }
 }
+
