@@ -1,4 +1,5 @@
 .customer-reviews {
+    background-color: $modal-bgcolor;
     background-position: center;
     background-size: cover;
     background-image:
@@ -95,7 +96,7 @@
 
   .customers__comments {
     padding: 35px 39px;
-    width: 420px;
+    width: 280px;
 
     font-weight: 400;
     font-size: 12px;
@@ -129,6 +130,16 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
+    color: $second-txcolor;
+    padding-bottom: 417px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 423px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 272px;
+    }
   }
 
   .swiper-pagination-bullet-active {
@@ -141,7 +152,7 @@
     margin-bottom: 393px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 228px;
+        margin-bottom: 379px;
         margin-top: 32px;
     }
 
