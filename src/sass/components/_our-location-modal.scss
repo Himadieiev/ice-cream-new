@@ -10,7 +10,6 @@
 }
 
 .local-franch__button.btn {
-
   &-two,
   &-one {
     display: flex;
@@ -19,17 +18,16 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
-    color: $second-txcolor;
 
     padding: 12px 40px;
-    width: 196px;
+    width: 203px;
     height: 42px;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       display: flex;
       padding: 12px 40px;
-      width: 196px;
+      width: 203px;
       justify-content: center;
     }
   }
@@ -45,7 +43,6 @@
     }
   }
 }
-
 .local-franch__arrow {
   fill: $seventh-txcolor;
   display: block;
@@ -54,7 +51,6 @@
   height: 10px;
   margin-left: 8px;
 }
-
 .icon-arrow {
   fill: $seventh-txcolor;
 }
@@ -65,7 +61,6 @@
   visibility: hidden;
   pointer-events: none;
 }
-
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!BACKDROP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -136,7 +131,6 @@
   border: none;
   background: inherit;
   fill: $second-txcolor;
-
   &:hover {
     cursor: pointer;
   }
@@ -179,6 +173,9 @@
   }
 }
 
-.locatiom-link {
+.location-link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
