@@ -1,9 +1,19 @@
 .hero {
+    position: relative;
+
+&__titlebox {
     width: 247px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 367px;
+        margin-bottom: 28px;
     }
+}
 
 &__title {
     font-family: $second-font;
@@ -13,6 +23,7 @@
     letter-spacing: 4%;
     line-height: 1.26;
     text-align: left;
+    text-transform: uppercase;
 }
 
 &__passion {
@@ -29,6 +40,14 @@
     }
 }
 
+&__links {
+    margin-bottom: 19px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
 &__button1 {
     padding: 11px 26px;
     font-family: $main-font;
@@ -39,7 +58,7 @@
     background-color: transparent;
     border: 2px solid $fifth-bgcolor;
     border-radius: 8px;
-    margin-left: 12px;
+    margin-right: 12px;
     transition: border-color $tr-delay $tr-timing-function, color $tr-delay $tr-timing-function;
 
     &:hover {
@@ -96,11 +115,17 @@
 }
 
 &__list {
+    position: absolute;
+    top: 28;
+    right: 0;
     list-style: none;
-    margin-left: auto;
 
     @media screen and (max-width: 767px) {
         display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 53;
     }
 }
 
@@ -139,7 +164,8 @@
 }
 
 &__mainimagemobile {
-    margin: 285px 0px 83px 60px;
+    margin-left: 83px;
+    margin-right: 60px;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -147,7 +173,12 @@
 }
 
 &__mainimagetablet {
-    margin: 86px 0px 408px 92px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    right: 92px;
+    height: 329px;
+    z-index: 10;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -159,7 +190,12 @@
 }
 
 &__mainimagedesktop {
-    margin: 104px 0px 652px 92px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    right: 92px;
+    height: 560px;
+    z-index: 10;
 
     @media screen and (max-width: 1199px) {
         display: none;
@@ -167,8 +203,11 @@
 }
 
 &__plateimagetablet {
-    margin-right: auto;
-    margin-bottom: 12px;
+    position: absolute;
+    bottom: 8;
+    left: 0;
+    height: 225px;
+    z-index: 2;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -180,8 +219,11 @@
 }
 
 &__plateimagedesktop {
-    margin-right: auto;
-    margin-bottom: 65px;
+    position: absolute;
+    bottom: 64;
+    left: 0;
+    height: 225px;
+    z-index: 2;
 
     @media screen and (max-width: 1199px) {
         display: none;
@@ -197,7 +239,11 @@
 }
 
 &__backgroundtablet {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 68px;
+    z-index: 1;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -209,7 +255,11 @@
 }
 
 &__backgrounddesktop {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 383px;
+    z-index: 1;
 
     @media screen and (max-width: 1199px) {
         display: none;
@@ -218,9 +268,15 @@
 
 &__paragraph {
     width: 139px;
+    position: absolute;
+    bottom: 20;
+    left: 204;
+    z-index: 3;
 
     @media screen and (min-width: 1200px) {
         width: 200px;
+        bottom: 103;
+        left: 257;
     }
 
     @media screen and (max-width: 767px) {
