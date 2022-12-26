@@ -71,7 +71,6 @@
 
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
-    //Расчет ширины элемента (100% - количество марджинов в строке * значение марджина)/ кол-во элементов в строке
     width: calc((100% - 6 * 8px)/3);
     margin: 8px;
   }
@@ -87,6 +86,7 @@
 .address-ice__type {
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -102,6 +102,7 @@
 
 .address-ice__city {
   margin-bottom: 8px;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -137,6 +138,26 @@
   }
 }
 
+.schedule-ice {
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+
 .schedule-ice__day {
   color: $second-txcolor;
 }
@@ -145,7 +166,7 @@
   color: $third-txcolor;
   margin-bottom: 24px;
   display: inline-block;
-
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -179,23 +200,6 @@
   }
 }
 
-.schedule-ice {
-  border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1;
-  padding: 24px 0;
-  font-size: 12px;
-  line-height: 1.83;
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.86;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 1.87;
-  }
-}
 
 
 .connection-ice {
@@ -209,6 +213,7 @@
 .connection-ice__item {
   color: $second-txcolor;
   display: block;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
 
