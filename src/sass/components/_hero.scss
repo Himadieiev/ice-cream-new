@@ -173,6 +173,8 @@
 }
 
 &__mainimagemobile {
+    position: absolute;
+    bottom: 0;
     margin-left: 83px;
     margin-right: 60px;
 
@@ -214,8 +216,6 @@
 &__plateimagetablet {
     position: absolute;
     bottom: 8;
-    left: 0;
-    height: 225px;
     z-index: 2;
 
     @media screen and (max-width: 767px) {
@@ -240,7 +240,9 @@
 }
 
 &__backgroundmobile {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     @media screen and (min-width: 768px) {
         display: none;

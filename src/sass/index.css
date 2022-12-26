@@ -477,6 +477,8 @@ body {
   }
 }
 .hero__mainimagemobile {
+  position: absolute;
+  bottom: 0;
   margin-left: 83px;
   margin-right: 60px;
 }
@@ -519,8 +521,6 @@ body {
 .hero__plateimagetablet {
   position: absolute;
   bottom: 8;
-  left: 0;
-  height: 225px;
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
@@ -546,7 +546,9 @@ body {
   }
 }
 .hero__backgroundmobile {
-  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 @media screen and (min-width: 768px) {
   .hero__backgroundmobile {
