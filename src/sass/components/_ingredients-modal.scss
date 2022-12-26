@@ -8,8 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $tr-delay $tr-timing-function;
+  visibility: visible;
   overflow-y: scroll;
-
 }
 
 .backdrop__products.is-hidden {
@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%);
   display: block;
   padding: 20px 20px;
-  // width: 568px;
+ 
 
   background: $modal-bgcolor;
   border: 2px solid $eighth-txcolor;
@@ -38,11 +38,13 @@
 
   @media screen and (min-width: 480px) {
     width: 280px;
-    overflow-y: scroll;
+    height: 968px;
+    
   }
 
   @media screen and (min-width: 768px) {
     width: 568px;
+    height: 996px;
     padding: 32px 60px;
   }
 }
@@ -175,6 +177,10 @@
   color: $second-txcolor;
 }
 
+.ingredients {
+  width: 100%;
+}
+
 .ingredients__title {
   display: flex;
   justify-content: center;
@@ -193,6 +199,8 @@
 }
 
 .ingredients__list {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
 }
 
