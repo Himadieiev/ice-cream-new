@@ -8,8 +8,10 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $tr-delay $tr-timing-function;
+
   visibility: visible;
   overflow-y: scroll;
+
 }
 
 .backdrop__products.is-hidden {
@@ -30,7 +32,7 @@
   transform: translate(-50%, -50%);
   display: block;
   padding: 20px 20px;
- 
+
 
   background: $modal-bgcolor;
   border: 2px solid $eighth-txcolor;
@@ -38,8 +40,12 @@
 
   @media screen and (min-width: 480px) {
     width: 280px;
+
     height: 968px;
     
+
+
+
   }
 
   @media screen and (min-width: 768px) {

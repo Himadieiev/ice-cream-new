@@ -1,22 +1,18 @@
 .customer-reviews {
-    background-color: $modal-bgcolor;
-    background-position: center;
-    background-size: cover;
+  background-color: $modal-bgcolor;
+  background-position: center;
+  background-size: cover;
+  background-image:
+  url(../images/customers-background/customersreviews-bg_480@1x.png);
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image:
 
-    url(../images/customers-background/customersreviews-bg_480@1x.png);
-
+    url(../images/customers-background/customersreviews-bg_480@2x.png);
 
     background-position: center;
     background-size: cover;
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image:
-
-      url(../images/customers-background/customersreviews-bg_480@2x.png);
-
-   
-
-    }
 
     // tablet screen 
     @media screen and (min-width: 768px) {
@@ -66,120 +62,157 @@
     @media screen and (min-width: 1200px) {
         padding-top: 480px;
     }
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
   }
 
-  .swiper__gallery {
-    display: block;
-    padding-right: 20px;
-    padding-left: 20px;
+  // tablet screen 
+  @media screen and (min-width: 768px) {
+      background-image: 
+      url(../images/customers-background/customersreviews-bg_768@1x.png);
+      background-position: center;
+      background-size: cover;
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:
+        url(../images/customers-background/customersreviews-bg_768@2x.png);
+      }
+  }
+  // desc screen
+  @media screen and (min-width: 1200px) {
+      background-image: 
+      url(../images/customers-background/customersreviews-bg_1200@1x.png);
+      background-position: center;
+      background-size: cover;
+      @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:
+        url(../images/customers-background/customersreviews-bg_1200@2x.png);
+      }
+  }
+ }
 
-    object-fit: cover;
+.customers__photo {
+  padding-top: 178px;
 
-    border-radius: 24px;
+  @media screen and (min-width: 768px) {
+      padding-top: 283px;
+  }
+  @media screen and (min-width: 1200px) {
+      padding-top: 480px;
+  }
+}
 
-    position: absolute;
-    top: -32px;
-    right: 0;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper__gallery {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+
+  position: absolute;
+  top: -32px;
+  right: 0;
 
 
-    @media screen and (min-width: 768px) {
-        padding-right: 0;
-        padding-left: 0;
+  @media screen and (min-width: 768px) {
+      padding-right: 0;
+      padding-left: 0;
 
-        width: 704px;
-        top: -130px;
-        right: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-right: 0;
-        padding-left: 0;
-
-        width: 1013px;
-        top: -94px;
-        right: 93px;
-    }
+      width: 704px;
+      top: -130px;
+      right: 30px;
   }
 
-  .customers__photo {
-    margin-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+      padding-right: 0;
+      padding-left: 0;
+
+      width: 1013px;
+      top: -94px;
+      right: 93px;
+  }
+}
+
+.customers__photo {
+  margin-bottom: 32px;
+}
+
+.customers__comments {
+  padding: 35px 39px;
+  width: 280px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  letter-spacing: 0.04em;
+
+  color: $main-txcolor;
+  background-color: $main-bgcolor;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+      padding: 28px 80px;
+      width: 705px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
   }
 
-  .customers__comments {
-    padding: 35px 39px;
-    width: 280px;
+  @media screen and (min-width: 1200px) {
+      padding: 43px 109px;
+      width: 968px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+  }
+}
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 255%;
-    letter-spacing: 0.04em;
+.customers__name {
+  margin-top: 32px;
 
-    color: $main-txcolor;
-    background-color: $main-bgcolor;
-    border-radius: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: $second-txcolor;
+  padding-bottom: 417px;
 
-    @media screen and (min-width: 768px) {
-        padding: 28px 80px;
-        width: 705px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding: 43px 109px;
-        width: 968px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
-    }
+  @media screen and (min-width: 768px) {
+      padding-bottom: 423px;
   }
 
-  .customers__name {
-    margin-top: 32px;
+  @media screen and (min-width: 1200px) {
+      padding-bottom: 272px;
+  }
+}
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    color: $second-txcolor;
-    padding-bottom: 417px;
+.swiper-pagination-bullet-active {
+  background: $main-bgcolor;
+}
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 423px;
-    }
 
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 272px;
-    }
+.swiper-pagination {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 393px;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 379px;
+      margin-top: 32px;
   }
 
-  .swiper-pagination-bullet-active {
-    background: $main-bgcolor;
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 228px;
+      margin-top: 32px;
   }
-
-  .swiper-pagination {
-    position: relative;
-    margin-top: 12px;
-    margin-bottom: 393px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 379px;
-        margin-top: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 228px;
-        margin-top: 32px;
-    }
-  }
+}
