@@ -2283,7 +2283,6 @@ ul {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  color: #131313;
   padding: 12px 40px;
   width: 203px;
   height: 42px;
@@ -2430,8 +2429,11 @@ ul {
   }
 }
 
-.locatiom-link {
+.location-link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .backdrop {
