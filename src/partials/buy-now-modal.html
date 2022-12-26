@@ -1,0 +1,119 @@
+<!-- <!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!- МОДАЛКА БАЙ НАУ -!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-> -->
+
+<section>
+  <div class="container">
+    <div>
+      <button
+        type="button"
+        class="contacts__button contacts__button-map btn-two"
+        data-modal-by-now-open1
+      >
+        TECT BuyNOW
+      </button>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-by-now>
+      <div class="modal-form">
+        <button class="modal-form__close" data-modal-by-now-close>
+          <svg width="20" height="20">
+            <use href="/src/images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form>
+          <h1 class="modal-form__title">Buy now</h1>
+
+          <ul class="modal-form__card">
+            <li class="modal-form__foto">
+              <a class="modal-form__link" href="">
+                <div class="modal-form__box">
+                  <img
+                    src="/src/images/modal/des-tab-img1-264@2x.png"
+                    width="132"
+                    height="139"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-form__info">
+                  <h2 class="modal-form__title-info">ice cream</h2>
+                </div>
+              </a>
+            </li>
+            <li class="modal-form__foto">
+              <a class="modal-form__link" href="">
+                <div class="modal-form__box">
+                  <img
+                    src="/src/images/modal/des-tab-img1-264@2x.png"
+                    width="132"
+                    height="139"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-form__info">
+                  <h2 class="modal-form__title-info">ice coffee</h2>
+                </div>
+              </a>
+            </li>
+            <li class="modal-form__foto">
+              <a class="modal-form__link" href="">
+                <div class="modal-form__box">
+                  <img
+                    src="/src/images/modal/des-tab-img1-264@2x.png"
+                    width="132"
+                    height="139"
+                    alt=""
+                  />
+                </div>
+                <div class="modal-form__info">
+                  <h2 class="modal-form__title-info">milkshake</h2>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="boxes">
+            <div class="modal-form__field">
+              <label class="modal-form__label">
+                <input
+                  class="modal-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+              </label>
+            </div>
+
+            <div class="modal-form__field">
+              <label class="modal-form__label">
+                <input
+                  class="modal-form__input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Phone"
+                />
+              </label>
+            </div>
+
+            <div class="modal-form__feedback">
+              <label class="modal-form__label">
+                <textarea
+                  class="modal-form__input modal-form__textarea"
+                  name="feedback"
+                  placeholder="Comment"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <button
+            class="modal-form__button"
+            type="submit"
+            data-modal-by-now-open1
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
