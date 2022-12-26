@@ -19,22 +19,31 @@
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
+
   }
 
 }
 
 .contacts-ice {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  // padding-top: 40px;
+  // padding-bottom: 20px;
+
+    position: relative;
+    transform: translateY(-353px);
+    height: 930px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    // padding-top: 80px;
+    // padding-bottom: 40px;
+    transform: translateY(-300px);
+    height: 360px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 100px;
-    padding-bottom: 54px;
+    // padding-top: 100px;
+    // padding-bottom: 54px;
+    transform: translateY(-128px);
+    height: 460px;
   }
 
 
@@ -46,11 +55,13 @@
 
 
   @media screen and (min-width: 768px) {
-    margin: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
@@ -72,14 +83,16 @@
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
     width: calc((100% - 6 * 8px)/3);
-    margin: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
 
   @media screen and (min-width: 1200px) {
     padding: 40px;
     width: calc((100% - 6 * 16px)/3);
-    margin: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
