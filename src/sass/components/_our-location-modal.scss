@@ -18,17 +18,16 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
-    color: $second-txcolor;
 
     padding: 12px 40px;
-    width: 196px;
+    width: 203px;
     height: 42px;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       display: flex;
       padding: 12px 40px;
-      width: 196px;
+      width: 203px;
       justify-content: center;
     }
   }
@@ -174,6 +173,9 @@
   }
 }
 
-.locatiom-link {
+.location-link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

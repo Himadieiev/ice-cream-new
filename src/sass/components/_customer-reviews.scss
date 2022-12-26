@@ -1,36 +1,61 @@
-.swiper {
+.customer-reviews {
+    background-color: $modal-bgcolor;
+    background-position: center;
+    background-size: cover;
     background-image:
+
     url(../images/customers-background/customersreviews-bg_480@1x.png);
+
+
     background-position: center;
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image:
+
       url(../images/customers-background/customersreviews-bg_480@2x.png);
+
+   
+
     }
 
     // tablet screen 
     @media screen and (min-width: 768px) {
         background-image: 
+
         url(../images/customers-background/customersreviews-bg_768@1x.png);
+
+     
+
         background-position: center;
         background-size: cover;
         @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
+
           url(../images/customers-background/customersreviews-bg_768@2x.png);
+
+       
+
         }
     }
     // desc screen
     @media screen and (min-width: 1200px) {
         background-image: 
+
         url(../images/customers-background/customersreviews-bg_1200@1x.png);
+
+
         background-position: center;
         background-size: cover;
         @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
+
           url(../images/customers-background/customersreviews-bg_1200@2x.png);
+
+      
+
         }
     }
-  }
+   }
 
   .customers__photo {
     padding-top: 178px;
@@ -74,7 +99,7 @@
 
         width: 704px;
         top: -130px;
-        right: 18px;
+        right: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -83,7 +108,7 @@
 
         width: 1013px;
         top: -94px;
-        right: 80px;
+        right: 93px;
     }
   }
 
@@ -93,7 +118,7 @@
 
   .customers__comments {
     padding: 35px 39px;
-    width: 420px;
+    width: 280px;
 
     font-weight: 400;
     font-size: 12px;
@@ -127,6 +152,16 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
+    color: $second-txcolor;
+    padding-bottom: 417px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 423px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 272px;
+    }
   }
 
   .swiper-pagination-bullet-active {
@@ -139,7 +174,7 @@
     margin-bottom: 393px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 228px;
+        margin-bottom: 379px;
         margin-top: 32px;
     }
 

@@ -29,7 +29,10 @@
     @media screen and (min-width: 1200px) {
         min-width: 1200px;
         background-image: url(/src/images/products/des-bg-1200@1x.png);
+
         
+
+
             @media  (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -173,7 +176,11 @@
 
         @media screen and (min-width: 768px) {
             background-image: url(/src/images/products/tab-prod1-200@1x.png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -185,7 +192,11 @@
 
         @media screen and (min-width: 1200px) {
             background-image: url(/src/images/products/des-prod1-302@1x.png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -197,7 +208,11 @@
 }
 .products__card:nth-child(2)::before {
     background-image: url(/src/images/products/mob-prod2-200@1x.png);
+
     
+
+
+
     @media  (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -208,7 +223,11 @@
 
         @media screen and (min-width: 768px) {
             background-image: url(/src/images/products/tab-prod2-200@1x.png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -220,7 +239,11 @@
 
         @media screen and (min-width: 1200px) {
             background-image: url(/src/images/products/des-prod2-302@1x\ .png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -243,7 +266,11 @@
 
         @media screen and (min-width: 768px) {
             background-image: url(/src/images/products/tab-prod3-200@1x.png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -255,7 +282,11 @@
 
         @media screen and (min-width: 1200px) {
             background-image: url(/src/images/products/des-prod3-302@1x.png);
+
             
+
+
+
                 @media  (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
@@ -330,5 +361,9 @@
         bottom: 60px;
         left: 165px;
     }
+
+}
+
+
 }
 
