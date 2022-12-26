@@ -1,5 +1,5 @@
 .logo {
-    z-index: 2;
+    z-index: 3;
 }
 
 .main__nav {
@@ -18,7 +18,7 @@
 }
 
 .menu-button {
-    z-index: 1;
+    z-index: 3;
     display: inline-block;
     padding: 0;
     border: none;
@@ -38,7 +38,9 @@
     }
 }
 
-.menu-button.is-open {margin-right: 0;
+.menu-button.is-open {
+    margin-right: 0;
+
     .menu-button__close {
         display: block;
     }
@@ -64,16 +66,18 @@
     top: 0;
     width: 100%;
 
+
     background-color: $main-bgcolor;
 
-    @media screen and (min-width:320px)and (max-width:767px) {
-        display: none;
-    }
-
     @media screen and (min-width:320px)and (max-width:1199px) {
-            transform: translateX(101%);
-            transition: transform $tr-delay $tr-timing-function;
+        transform: translateX(-101%);
+        transition: transform $tr-delay $tr-timing-function;
+        height: 100vh;
+
+        .button__buy {
+            position: relative;
         }
+    }
 
     @media screen and (min-width:768px)and (max-width:1199px) {
         .nav {
@@ -88,9 +92,11 @@
     }
 }
 
-.menu-bg.is-open {transform: translateX(0);
+.menu-bg.is-open {
+    transform: translateX(0);
     transition: transform $tr-delay $tr-timing-function;
     height: 100vh;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -154,6 +160,7 @@
         }
     }
 }
+
 .nav__link:hover,
 .nav__link:focus {
     color: $fifth-bgcolor;
@@ -208,7 +215,7 @@
     align-items: center;
     vertical-align: middle;
     transition: color $tr-delay $tr-timing-function,
-    background-color $tr-delay $tr-timing-function;
+        background-color $tr-delay $tr-timing-function;
 
     @media screen and (max-width: 767px) {
         margin-bottom: 64px;
@@ -216,12 +223,15 @@
         margin-right: auto;
     }
 }
+
 .button__buy:hover {
     background-color: $hover-focus-color;
 }
+
 .button__buy:focus {
     background-color: $hover-focus-color;
     color: $sixth-txcolor;
+
     .svg__buy {
         fill: $sixth-txcolor;
     }
