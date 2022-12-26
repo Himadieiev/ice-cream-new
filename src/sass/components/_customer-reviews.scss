@@ -3,18 +3,17 @@
     background-size: cover;
     background-image:
 
-    url(/src/images/customers-background/customersreviews-bg_480@1x.png);
-
     url(../images/customers-background/customersreviews-bg_480@1x.png);
+
 
     background-position: center;
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image:
 
-      url(/src/images/customers-background/customersreviews-bg_480@2x.png);
-
       url(../images/customers-background/customersreviews-bg_480@2x.png);
+
+   
 
     }
 
@@ -22,18 +21,18 @@
     @media screen and (min-width: 768px) {
         background-image: 
 
-        url(/src/images/customers-background/customersreviews-bg_768@1x.png);
-
         url(../images/customers-background/customersreviews-bg_768@1x.png);
+
+     
 
         background-position: center;
         background-size: cover;
         @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
 
-          url(/src/images/customers-background/customersreviews-bg_768@2x.png);
-
           url(../images/customers-background/customersreviews-bg_768@2x.png);
+
+       
 
         }
     }
@@ -41,18 +40,17 @@
     @media screen and (min-width: 1200px) {
         background-image: 
 
-        url(/src/images/customers-background/customersreviews-bg_1200@1x.png);
-
         url(../images/customers-background/customersreviews-bg_1200@1x.png);
+
 
         background-position: center;
         background-size: cover;
         @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
 
-          url(/src/images/customers-background/customersreviews-bg_1200@2x.png);
-
           url(../images/customers-background/customersreviews-bg_1200@2x.png);
+
+      
 
         }
     }
