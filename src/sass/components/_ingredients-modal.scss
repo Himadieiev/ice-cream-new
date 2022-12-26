@@ -318,13 +318,21 @@
   color: $second-txcolor;
 
   transition: color $tr-delay $tr-timing-function, background-color $tr-delay $tr-timing-function;
+  &:hover {
+      background-color: $hover-focus-color;
+    }
+  
+    &:focus {
+      background-color: $hover-focus-color$hover-focus-color;
+      color: $sixth-txcolor;
+    }
 }
 
-.products__arrow {
-  border: none;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  transition: $tr-timing-function;
+// .products__arrow {
+//   border: none;
+//   background-color: transparent;
+//   display: flex;
+//   justify-content: center;
+//   transition: $tr-timing-function;
 
-}
+// }
