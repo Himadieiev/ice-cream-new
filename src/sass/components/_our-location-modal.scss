@@ -21,17 +21,24 @@
     color: $second-txcolor;
 
     padding: 12px 40px;
-    width: 196px;
+    width: 203px;
     height: 42px;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       display: flex;
       padding: 12px 40px;
-      width: 196px;
+      width: 203px;
       justify-content: center;
     }
   }
+}
+.local-franch__button.btn-one {
+  background-color: #f8d24e;
+}
+
+.local-franch__button.btn-two {
+  background-color: #f8d24e;
 }
 
 .local-franch__modal-item {

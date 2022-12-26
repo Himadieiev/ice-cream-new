@@ -34,7 +34,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: inherit;
+  background-color: $eighth-txcolor;
   border: 2px solid $fifth-bgcolor;
   border-radius: 10px;
   cursor: pointer;
@@ -42,9 +42,12 @@ body {
 
   transition: background-color $tr-delay $tr-timing-function;
 
-  &:hover,
+  &:hover {
+    background-color: $hover-focus-color;
+  }
   &:focus {
-    background-color: $fifth-bgcolor;
+    color: $sixth-txcolor;
+    background-color: $hover-focus-color;
   }
 }
 
@@ -54,16 +57,19 @@ body {
   text-align: center;
 
   background-color: inherit;
-  border: 2px solid $fifth-bgcolor;
+  border: 2px solid $eighth-txcolor;
   border-radius: 10px;
   cursor: pointer;
   color: $seventh-txcolor;
 
   transition: background-color $tr-delay $tr-timing-function;
 
-  &:hover,
+  &:hover {
+    border: 2px solid $hover-focus-color;
+  }
   &:focus {
-    background-color: $hover-focus-color;
+    color: $sixth-txcolor;
+    border: 2px solid $hover-focus-color;
   }
 }
 
