@@ -1,70 +1,50 @@
 <!--Модальне вікно  -->
 
-<div class="backdrop is-hidden" data-modal-ingredients>
-  <div class="modal">
-    <button class="modal-icon" type="button" data-modal-ingredients-close>
-      <svg class="modal-icon-close" width="18" height="18">
-        <use href="./images/symbol-defs.svg#icon-close"></use>
+<div class="backdrop__products is-hidden" data-modal-ingredients>
+  <div class="main-modal">
+
+    <button class="modal-icon" type="button" data-modal-close>
+
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+
       </svg>
     </button>
-    <h2 class="products-modal__title">Chololate icecream</h2>
+    <p class="products-modal__title">Chololate icecream</p>
     <div class="products-modal__thumb">
-      <picture class="products-modal__img">
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/modal/des-tab-img4-132@1x.png 1x,
-            ./images/modal/des-tab-img4-264@2x.png 2x
-          "
-          type="image/jpg"
-        />
-
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/modal/des-tab-img4-132@1x.png 1x,
-            ./images/modal/des-tab-img4-264@2x.png 2x
-          "
-          type="image/jpg"
-        />
-        <img src="./images/modal/des-tab-img4-132@1x.png" alt="ice cream" />
-      </picture>
+      <img
+        srcset="
+          images/modal/ingredients-modal@1x.png 1x,
+          images/modal/ingredients-modal@2x.png 2x
+        "
+        src="images/modal/ingredients-modal@1x.png"
+        alt="Icecream"
+      />
     </div>
-
-    <div class="products-modal">
-      <ul class="products-modal__list list">
-        <li class="products-modal__item">
-          <div class="products-modal__wrapper">
-            <span class="wrapper-product__amount">320</span>
-            <span class="wrapper-product__text">kcal</span>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__wrapper">
-            <span class="wrapper-product__amount">4g </span>
-            <span class="wrapper-product__text">Prote...</span>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__wrapper">
-            <span class="wrapper-product__amount">8,2g</span>
-            <span class="wrapper-product__text">Fats</span>
-          </div>
-        </li>
-        <li class="products-modal__item">
-          <div class="products-modal__wrapper">
-            <span class="wrapper-product__amount">40,4g</span>
-            <span class="wrapper-product__text">Carbs</span>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <ul class="products-modal__list list">
+      <li class="products-modal__item">
+        <span>320</span>
+        kcal
+      </li>
+      <li class="products-modal__item">
+        <span>4g</span>
+        Prote...
+      </li>
+      <li class="products-modal__item">
+        <span>8,2g</span>
+        Fats
+      </li>
+      <li class="products-modal__item">
+        <span>40,4g</span>
+        Carbs
+      </li>
+    </ul>
 
     <div class="ingredients">
       <p class="ingredients__title">Ingredients</p>
       <ul class="ingredients__list list">
         <li class="ingredients__item">
-          <span class="ingredients-item-quantity">Milk</span
+          <span class="ingredients-item-name">Milk</span
           ><span class="ingredients-item-name">100ml</span>
         </li>
         <li class="ingredients__item">
@@ -98,6 +78,7 @@
           id="name"
           autofocus
           placeholder="Name"
+          required
         />
       </label>
 
@@ -108,6 +89,7 @@
           name="tel"
           id="tel"
           placeholder="Phone"
+          required
         />
       </label>
 
@@ -122,4 +104,5 @@
       <button class="products-modal__btn" type="submit">Submit</button>
     </form>
   </div>
+</div>
 </div>

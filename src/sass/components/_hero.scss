@@ -1,0 +1,310 @@
+.hero {
+  background-color: $main-bgcolor;
+  background-image: url('../images/hero/mob-bg-img-320@1x.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/hero/mob-bg-img-640@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-size: 768px;
+
+    background-image: url('../images/hero/tab-bg-img-768@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero/tab-bg-img-1536@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-size: 1200px;
+
+    background-image: url('../images/hero/des-bg-img-1200@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero/des-bg-img-1200@1x.png');
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+  padding-bottom: 236px;
+  padding-top: 38px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 183px;
+    padding-top: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 334px;
+    padding-top: 33px;
+  }
+}
+
+.hollow-button__hero {
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  color: $seventh-txcolor;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28571;
+  transition: border .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1);
+
+  @media screen and (max-width: 1199px) {
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: calc(15 / 12);
+    text-align: center;
+    padding: 10px 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 134px;
+    padding: 11px 30px;
+  }
+}
+
+.hollow-button__hero:hover {
+  fill: currentColor;
+  border-color: $hover-focus-color;
+}
+
+.hollow-button__hero:focus {
+  color: $main-txcolor;
+  fill: currentColor;
+  border-color: $hover-focus-color;
+}
+
+.button-text {
+  text-align: center;
+  color: $fifth-bgcolor;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font;
+  text-decoration-line: underline;
+}
+
+.button-text:hover {
+  color: $hover-focus-color;
+  fill: currentColor;
+}
+
+.button-text:focus {
+  color: $main-txcolor;
+  fill: currentColor;
+}
+
+.hero__btn--group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.hero__tablet--group {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    bottom: 12px;
+    align-items: flex-end;
+    z-index: 3;
+
+    @media screen and (min-width: 1200px) {
+      bottom: 65px;
+    }
+  }
+}
+
+.hero_ic--left {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero_ic--right {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    left: 408px;
+    transform: translateX(0);
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 652px;
+  }
+}
+
+.hero__title {
+  max-width: 357px;
+  color: $main-txcolor;
+  font-family: $second-font;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  width: 247px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    width: 367px;
+    margin-bottom: 28px;
+  }
+}
+
+.hero__title--passion {
+  font-size: 34px;
+  line-height: calc(33 / 34);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+
+.hero__group {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hero__chain {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-top: 28px;
+  }
+}
+
+.chain__number {
+  font-family: $main-font;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: calc(34 / 28);
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: $second-txcolor;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
+}
+
+.chain__item {
+  text-align: end;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.chain__text {
+  font-family: $main-font;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: calc(10 / 8);
+  letter-spacing: 0em;
+  color: $modal-bgcolor;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+.hero__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  color: $main-txcolor;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    width: 146px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    width: 200px;
+  }
+}
+
+.hero__arrow {
+  display: block;
+  fill: $main-txcolor;
+  transition: $tr-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $hover-focus-color;
+  }
+}
+
+.arrow__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 0;
+  margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    fill: $hover-focus-color;
+  }
+}
+
+.hero__text--group {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {}
+}
