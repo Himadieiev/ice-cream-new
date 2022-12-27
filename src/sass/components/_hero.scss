@@ -33,6 +33,10 @@
     line-height: 1.26;
     text-align: left;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+    }
 }
 
 &__passion {
@@ -42,10 +46,6 @@
     @media screen and (min-width: 1200px) {
         font-size: 38px;
         line-height: 1.26;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 38px;
     }
 }
 
@@ -126,7 +126,7 @@
 &__list {
     position: absolute;
     top: 28;
-    right: 0;
+    right: 44;
     list-style: none;
 
     @media screen and (max-width: 767px) {
@@ -175,8 +175,7 @@
 &__mainimagemobile {
     position: absolute;
     bottom: 0;
-    margin-left: 83px;
-    margin-right: 60px;
+    right: 60px;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -253,6 +252,7 @@
     position: absolute;
     bottom: 0;
     margin: 0;
+    left: 0;
     height: 68px;
     z-index: 1;
 
@@ -269,6 +269,7 @@
     position: absolute;
     bottom: 0;
     margin: 0;
+    left: 0;
     height: 383px;
     z-index: 1;
 

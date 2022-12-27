@@ -343,6 +343,11 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+  }
+}
 .hero__passion {
   font-size: 34px;
   line-height: 0.96;
@@ -351,11 +356,6 @@ body {
   .hero__passion {
     font-size: 38px;
     line-height: 1.26;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__passion {
-    font-size: 38px;
   }
 }
 .hero__links {
@@ -429,7 +429,7 @@ body {
 .hero__list {
   position: absolute;
   top: 28;
-  right: 0;
+  right: 44;
   list-style: none;
 }
 @media screen and (max-width: 767px) {
@@ -479,8 +479,7 @@ body {
 .hero__mainimagemobile {
   position: absolute;
   bottom: 0;
-  margin-left: 83px;
-  margin-right: 60px;
+  right: 60px;
 }
 @media screen and (min-width: 768px) {
   .hero__mainimagemobile {
@@ -559,6 +558,7 @@ body {
   position: absolute;
   bottom: 0;
   margin: 0;
+  left: 0;
   height: 68px;
   z-index: 1;
 }
@@ -576,6 +576,7 @@ body {
   position: absolute;
   bottom: 0;
   margin: 0;
+  left: 0;
   height: 383px;
   z-index: 1;
 }
