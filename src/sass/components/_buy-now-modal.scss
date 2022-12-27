@@ -98,21 +98,13 @@ ul {
     }
   }
 
-  // &__foto:nth-last-child(n + 2) {
 
-  //   @media screen and (min-width: 768px) {
-  //     margin-bottom: 0;
-  //     margin-right: 32px;
-  //   }
-  // }
 
   img {
     display: block;
   }
 
-  // &__info {
 
-  // }
 
   &__link {
     text-decoration: none;
@@ -299,16 +291,4 @@ ul {
   justify-content: center;
 }
 
-// .modal-form__input:hover ~ .modal-form__icon {
-//   fill: purple;
-// }
 
-// .modal-form__input:focus ~ .modal-form__icon {
-//   fill: purple;
-// }
-
-// .filter-list__link,
-// .filter-list__title {
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
