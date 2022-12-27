@@ -71,14 +71,26 @@
   }
  }
 
-.customers__photo {
-  padding-top: 178px;
+ .swiper {
+  transform: translateY(-32px);
 
   @media screen and (min-width: 768px) {
-      padding-top: 283px;
+    transform: translateY(-140px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-80px);
+  }
+ }
+
+.customers__photo {
+  margin-top: 80px;
+
+  @media screen and (min-width: 768px) {
+      margin-top: 100px;
   }
   @media screen and (min-width: 1200px) {
-      padding-top: 480px;
+      margin-top: 140px;
   }
 }
 
@@ -102,9 +114,6 @@
 
   border-radius: 24px;
 
-  position: absolute;
-  top: -32px;
-  right: 0;
 
 
   @media screen and (min-width: 768px) {
@@ -112,8 +121,7 @@
       padding-left: 0;
 
       width: 704px;
-      top: -130px;
-      right: 30px;
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -121,8 +129,7 @@
       padding-left: 0;
 
       width: 1013px;
-      top: -94px;
-      right: 93px;
+
   }
 }
 
@@ -167,14 +174,14 @@
   font-size: 16px;
   line-height: 186%;
   color: $second-txcolor;
-  padding-bottom: 417px;
+  padding-bottom: 397px;
 
   @media screen and (min-width: 768px) {
-      padding-bottom: 423px;
+      padding-bottom: 280px;
   }
 
   @media screen and (min-width: 1200px) {
-      padding-bottom: 272px;
+      padding-bottom: 172px;
   }
 }
 
@@ -186,15 +193,15 @@
 .swiper-pagination {
   position: relative;
   margin-top: 12px;
-  margin-bottom: 393px;
+  margin-bottom: 360px;
 
   @media screen and (min-width: 768px) {
-      margin-bottom: 379px;
+      margin-bottom: 240px;
       margin-top: 32px;
   }
 
   @media screen and (min-width: 1200px) {
-      margin-bottom: 228px;
+      margin-bottom: 128px;
       margin-top: 32px;
   }
 }
