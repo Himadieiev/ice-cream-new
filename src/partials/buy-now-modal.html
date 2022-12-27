@@ -2,65 +2,71 @@
 
 <section>
   <div class="container">
-    <div class="backdrop is-hidden" data-modal-by-now>
+    <div class="backdrop" buy-now-modal>
       <div class="modal-form">
-        <button class="modal-form__close" data-modal-by-now-close>
+        <button class="modal-form__close" buy-now-modal-close>
           <svg width="20" height="20">
-            <use href="/src/images/symbol-defs.svg#icon-close"></use>
+            <use href="/src/images/symbol-defs.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <p class="modal-form__title">Buy now</p>
+        <ul class="modal-form__cards">
+          <li class="modal-form__ice-card modal-form__ice-card--icecream">
+            <a class="modal-form__link" href="#">
+              <div class="modal-form__box modal-form__box--icecream">
+                <img
+                  srcset="
+                    images/modal/mob-buy-now-1@1x.png 1x,
+                    images/modal/mob-buy-now-1@2x.png 2x
+                  "
+                  src="images/modal/mob-buy-now-1@1x.png"
+                  width="132"
+                  height="132"
+                  alt="Icecream"
+                />
+              </div>
 
+              ice cream
+            </a>
+          </li>
+          <li class="modal-form__ice-card modal-form__ice-card--icecoffe">
+            <a class="modal-form__link" href="#">
+              <div class="modal-form__box modal-form__box--icecoffe">
+                <img
+                  srcset="
+                    images/modal/mob-buy-now-2@1x.png 1x,
+                    images/modal/mob-buy-now-2@2x.png 2x
+                  "
+                  src="images/modal/mob-buy-now-2@1x.png"
+                  width="132"
+                  height="132"
+                  alt="Icecream"
+                />
+              </div>
+
+              ice coffee
+            </a>
+          </li>
+          <li class="modal-form__ice-card modal-form__ice-card--milkshake">
+            <a class="modal-form__link" href="#">
+              <div class="modal-form__box modal-form__box--milkshake">
+                <img
+                  srcset="
+                    images/modal/mob-buy-now-3@1x.png 1x,
+                    images/modal/mob-buy-now-3@2x.png 2x
+                  "
+                  src="images/modal/mob-buy-now-3@1x.png"
+                  width="132"
+                  height="132"
+                  alt="Icecream"
+                />
+              </div>
+
+              milkshake
+            </a>
+          </li>
+        </ul>
         <form>
-          <h1 class="modal-form__title">Buy now</h1>
-
-          <ul class="modal-form__card">
-            <li class="modal-form__foto">
-              <a class="modal-form__link" href="">
-                <div class="modal-form__box">
-                  <img
-                    src="/src/images/modal/des-tab-img1-264@2x.png"
-                    width="132"
-                    height="139"
-                    alt=""
-                  />
-                </div>
-                <div class="modal-form__info">
-                  <h2 class="modal-form__title-info">ice cream</h2>
-                </div>
-              </a>
-            </li>
-            <li class="modal-form__foto">
-              <a class="modal-form__link" href="">
-                <div class="modal-form__box">
-                  <img
-                    src="/src/images/modal/des-tab-img1-264@2x.png"
-                    width="132"
-                    height="139"
-                    alt=""
-                  />
-                </div>
-                <div class="modal-form__info">
-                  <h2 class="modal-form__title-info">ice coffee</h2>
-                </div>
-              </a>
-            </li>
-            <li class="modal-form__foto">
-              <a class="modal-form__link" href="">
-                <div class="modal-form__box">
-                  <img
-                    src="/src/images/modal/des-tab-img1-264@2x.png"
-                    width="132"
-                    height="139"
-                    alt=""
-                  />
-                </div>
-                <div class="modal-form__info">
-                  <h2 class="modal-form__title-info">milkshake</h2>
-                </div>
-              </a>
-            </li>
-          </ul>
-
           <div class="boxes">
             <div class="modal-form__field">
               <label class="modal-form__label">
