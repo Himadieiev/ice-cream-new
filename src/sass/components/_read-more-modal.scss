@@ -2,6 +2,7 @@
   position: fixed;
   left: 50%;
   top: 50%;
+  z-index: 999;
   transform: translate(-50%, -50%) scale(1);
   width: 280px;
   padding: 26px;
