@@ -13,6 +13,14 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
     }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
+    
   })();
 
 
