@@ -1,5 +1,5 @@
 .logo {
-    z-index: 3;
+    z-index: 5;
 }
 
 .main__nav {
@@ -26,7 +26,7 @@
     cursor: pointer;
 
     @media screen and (min-width:768px) {
-        margin-right: 184px;
+        margin-left: 444px;
     }
 
     .menu-button__close {
@@ -40,6 +40,7 @@
 
 .menu-button.is-open {
     margin-right: 0;
+    margin-left: auto;
 
     .menu-button__close {
         display: block;
@@ -74,9 +75,6 @@
         transition: transform $tr-delay $tr-timing-function;
         height: 100vh;
 
-        .button__buy {
-            position: relative;
-        }
     }
 
     @media screen and (min-width:768px)and (max-width:1199px) {
@@ -96,8 +94,9 @@
     transform: translateX(0);
     transition: transform $tr-delay $tr-timing-function;
     height: 100vh;
-    z-index: 3;
+    z-index: 4;
     display: flex;
+    z-index: 4;
     flex-direction: column;
     position: fixed;
     justify-content: center;
@@ -114,6 +113,7 @@
         .button__buy {
             display: none;
         }
+
     }
 }
 
@@ -222,6 +222,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .button__buy:hover {
@@ -239,4 +243,22 @@
 
 .button__buy:disabled {
     background-color: $disabled-color;
+}
+
+.tablet__buy {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+
+        .menu-bg.is-open .tablet__buy {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
