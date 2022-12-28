@@ -36,6 +36,15 @@ ul {
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 30px 52px;
+    top: 70px;
+    left: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 30px 52px;
+    top: 50px;
+    left: 50px;
   }
 
   &__close {
@@ -98,13 +107,9 @@ ul {
     }
   }
 
-
-
   img {
     display: block;
   }
-
-
 
   &__link {
     text-decoration: none;
@@ -290,5 +295,3 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
-
