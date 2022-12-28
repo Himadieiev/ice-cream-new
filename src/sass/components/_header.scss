@@ -1,8 +1,9 @@
 .logo {
     z-index: 5;
+   
 }
 
-.main__nav {
+.main__nav {position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,9 +13,13 @@
         padding-top: 8px;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         padding-top: 20px;
     }
+ @media screen and (min-width:320px) and (max-width:767px) {
+    padding-top: 12px;
+}
+
 }
 
 .menu-button {
@@ -26,7 +31,7 @@
     cursor: pointer;
 
     @media screen and (min-width:768px) {
-        margin-left: 444px;
+        margin-right:184px;
     }
 
     .menu-button__close {
@@ -43,9 +48,8 @@
     margin-left: auto;
 
     .menu-button__close {
-        display: block;
-    }
-
+        display: block;}
+       
     .menu-button__open {
         display: none;
     }
@@ -96,14 +100,11 @@
     height: 100vh;
     z-index: 4;
     display: flex;
-    z-index: 4;
     flex-direction: column;
     position: fixed;
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
-
-    @media screen and (min-width:768px) {
+      @media screen and (min-width:768px) {
         .nav {
             display: flex;
             justify-content: center;
@@ -129,6 +130,9 @@
 }
 
 .nav__list {
+    @media screen and (min-width:320px) and (max-width:767px) {
+            margin-bottom: 110px;
+        }
     .link.current {
         color: $second-txcolor;
     }
@@ -137,6 +141,8 @@
         margin-left: 308px;
         display: flex;
     }
+
+
 
     .nav__link {
         color: $main-txcolor;
@@ -181,12 +187,10 @@
         margin-bottom: 32px;
     }
 
-    .nav__item:last-child {
-        margin-bottom: 110px;
-    }
+    
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:320px) and (max-width:1199px) {
     .nav__item {
         margin-bottom: 40px;
     }
@@ -218,7 +222,6 @@
         background-color $tr-delay $tr-timing-function;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 64px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -247,7 +250,10 @@
 
 .tablet__buy {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: block;
+        display:inline-block;
+        position: absolute;
+        margin-top: -48px;
+        margin-left: 580px;
 
         .menu-bg.is-open .tablet__buy {
             display: none;
