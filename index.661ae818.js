@@ -1,0 +1,2 @@
+var btn=document.getElementById("menu-toggle"),lines=btn.querySelectorAll(".line"),cls={open:"open",close:"close"},btnClass=cls.open;btn.addEventListener("click",(function(){btn.classList.contains(cls.open)?(btn.classList.remove(btnClass),btnClass=cls.close):btn.classList.contains(cls.close)&&(btn.classList.remove(btnClass),btnClass=cls.open),btn.offsetWidth,btn.classList.add(btnClass)}));
+//# sourceMappingURL=index.661ae818.js.map
