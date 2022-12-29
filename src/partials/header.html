@@ -1,71 +1,107 @@
-<header>
-  <div class="container main__nav">
-    <a class="logo" href="">
-      <img
-        class="img-logo"
-        srcset="
-          ./images/hero/mob-logo-40@1x.png   40w,
-          ./images/hero/mob-logo-80@2x.png   80w,
-          ./images/hero/tab-logo-48@1x.png   48w,
-          ./images/hero/tab-logo-96@2x.png   96w,
-          ./images/hero/des-logo-60@1x.png   60w,
-          ./images/hero/des-logo-120@2x.png 120w
-        "
-        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
-        src="./images/hero/mob-logo-40@1x.png"
-        alt="logo"
-      />
-    </a>
-    <button
-      data-menu-button
-      aria-expanded="false"
-      aria-controls="menu-bg"
-      type="button"
-      class="menu-button"
-    >
-      <svg width="32" height="32" aria-label="Mobile menu">
-        <use
-          class="menu-button__open"
-          href="./images/symbol-defs.svg#icon-menu"
-        ></use>
-        <use
-          class="menu-button__close"
-          href="./images/symbol-defs.svg#icon-close"
-        ></use>
-      </svg>
-    </button>
-    <div data-menu class="menu-bg" id="menu-bg">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link current" href="#how-its-made?"
-              >How it’s made?</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#our-products">Our products</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button data-modal-by-now-open1 class="button__buy" type="button">
-        Buy now
-        <svg сlass="svg__buy" width="12" height="12">
-          <use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-    </div>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ХЕАДЕР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <header class="header">
+        <div class="container">
+          <div class="mobile-menu">
+            <div class="mobile-menu__test">
+              <a class="logo" href="">
+                <img
+                  class="img-logo"
+                  srcset="
+                    ./images/hero/mob-logo-40@1x.png   40w,
+                    ./images/hero/mob-logo-80@2x.png   80w,
+                    ./images/hero/tab-logo-48@1x.png   48w,
+                    ./images/hero/tab-logo-96@2x.png   96w,
+                    ./images/hero/des-logo-60@1x.png   60w,
+                    ./images/hero/des-logo-120@2x.png 120w
+                  "
+                  sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+                  src="./images/hero/mob-logo-40@1x.png"
+                  alt="logo"
+                />
+              </a>
 
-  </div>
-      <button data-modal-by-now-open2 class="button__buy tablet__buy" type="button">
-        Buy now
-        <svg сlass="svg__buy " width="12" height="12">
-          <use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-</header>
+              <div class="test">
+                <div class="burger-menu" data-menu-button>
+                  <span class="burger-menu-item"> </span>
+                </div>
+                <button
+                  data-modal-by-now-open1
+                  aria-expanded="false"
+                  aria-controls="menu-bg"
+                  type="button"
+                  class="button-buy grow-btn"
+                >
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="menu" data-menu>
+              <ul class="menu-list">
+                <li class="menu-item"></li>
+                <li class="menu-item grow">
+                  <a class="menu-link" href="./">Home</a>
+                </li>
+                <li class="menu-item grow">
+                  <a class="menu-link" href="./">How it’s made?</a>
+                </li>
+                <li class="menu-item grow">
+                  <a class="menu-link" href="./">Our products</a>
+                </li>
+                <li class="menu-item grow">
+                  <a class="menu-link" href="./">Contact</a>
+                </li>
+                <li>
+                  <button data-modal-by-now-open2 class="button-buy-menu grow-btn" type="button">
+                    Buy now
+                    <svg сlass="svg__buy" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__main">
+            <a class="logo" href="">
+              <img
+                class="img-logo"
+                srcset="
+                  ./images/hero/mob-logo-40@1x.png   40w,
+                  ./images/hero/mob-logo-80@2x.png   80w,
+                  ./images/hero/tab-logo-48@1x.png   48w,
+                  ./images/hero/tab-logo-96@2x.png   96w,
+                  ./images/hero/des-logo-60@1x.png   60w,
+                  ./images/hero/des-logo-120@2x.png 120w
+                "
+                sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+                src="./images/hero/mob-logo-40@1x.png"
+                alt="logo"
+              />
+            </a>
+
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Home</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#how-its-made?" class="header__link">How it’s made?</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#our-products" class="header__link">Our products</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#contact" class="header__link">Contact</a>
+              </li>
+              <li>
+                <button data-modal-by-now-open3 class="button-buy grow-btn" type="button">
+                  Buy now
+                  <svg сlass="svg__buy" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>

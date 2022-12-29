@@ -1,106 +1,104 @@
-<!--Модальне вікно  -->
+      <!-- !!!!!!!!!!!!!!!!!!!МОДАЛКА ИНГРИДИЕНТЫ!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-<div class="backdrop__products is-hidden" data-modal-ingredients>
-  <div class="main-modal">
+      <div class="backdrop__products is-hidden" data-modal-ingredients>
+        <div class="main-modal">
+          <button class="modal-icon" type="button" data-modal-close>
+            <svg class="modal-icon-close" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <p class="products-modal__title">Chololate icecream</p>
+          <div class="products-modal__thumb">
+            <img
+              srcset="
+                images/modal/ingredients-modal@1x.png 1x,
+                images/modal/ingredients-modal@2x.png 2x
+              "
+              src="images/modal/ingredients-modal@1x.png"
+              alt="Icecream"
+            />
+          </div>
+          <ul class="products-modal__list list">
+            <li class="products-modal__item">
+              <span>320</span>
+              kcal
+            </li>
+            <li class="products-modal__item">
+              <span>4g</span>
+              Prote...
+            </li>
+            <li class="products-modal__item">
+              <span>8,2g</span>
+              Fats
+            </li>
+            <li class="products-modal__item">
+              <span>40,4g</span>
+              Carbs
+            </li>
+          </ul>
 
-    <button class="modal-icon" type="button" data-modal-close>
+          <div class="ingredients">
+            <p class="ingredients__title">Ingredients</p>
+            <ul class="ingredients__list list">
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Milk</span
+                ><span class="ingredients-item-name">100ml</span>
+              </li>
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Belgian chocolate</span
+                ><span class="ingredients-item-name">20g</span>
+              </li>
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Cream</span
+                ><span class="ingredients-item-name">150 ml</span>
+              </li>
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Cocoa powder</span>
+                <span class="ingredients-item-name">30g</span>
+              </li>
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Sugar</span
+                ><span class="ingredients-item-name">40g</span>
+              </li>
+              <li class="ingredients__item">
+                <span class="ingredients-item-name">Vanilla sugar</span>
+                <span class="ingredients-item-name">10g</span>
+              </li>
+            </ul>
+          </div>
+          <form class="products-modal__form">
+            <label class="products-modal__field">
+              <input
+                class="products-modal__input"
+                type="text"
+                name="name"
+                id="name"
+                autofocus
+                placeholder="Name"
+                required
+              />
+            </label>
 
-      <svg class="modal-icon-close" width="20" height="20">
-        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            <label class="products-modal__field">
+              <input
+                class="products-modal__input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Phone"
+                required
+              />
+            </label>
 
-      </svg>
-    </button>
-    <p class="products-modal__title">Chololate icecream</p>
-    <div class="products-modal__thumb">
-      <img
-        srcset="
-          images/modal/ingredients-modal@1x.png 1x,
-          images/modal/ingredients-modal@2x.png 2x
-        "
-        src="images/modal/ingredients-modal@1x.png"
-        alt="Icecream"
-      >
-    </div>
-    <ul class="products-modal__list list">
-      <li class="products-modal__item">
-        <span>320</span>
-        kcal
-      </li>
-      <li class="products-modal__item">
-        <span>4g</span>
-        Prote...
-      </li>
-      <li class="products-modal__item">
-        <span>8,2g</span>
-        Fats
-      </li>
-      <li class="products-modal__item">
-        <span>40,4g</span>
-        Carbs
-      </li>
-    </ul>
-
-    <div class="ingredients">
-      <p class="ingredients__title">Ingredients</p>
-      <ul class="ingredients__list list">
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Milk</span
-          ><span class="ingredients-item-name">100ml</span>
-        </li>
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Belgian chocolate</span
-          ><span class="ingredients-item-name">20g</span>
-        </li>
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Cream</span
-          ><span class="ingredients-item-name">150 ml</span>
-        </li>
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Cocoa powder</span>
-          <span class="ingredients-item-name">30g</span>
-        </li>
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Sugar</span
-          ><span class="ingredients-item-name">40g</span>
-        </li>
-        <li class="ingredients__item">
-          <span class="ingredients-item-name">Vanilla sugar</span>
-          <span class="ingredients-item-name">10g</span>
-        </li>
-      </ul>
-    </div>
-    <form class="products-modal__form">
-      <label class="products-modal__field">
-        <input
-          class="products-modal__input"
-          type="text"
-          name="name"
-          id="name"
-          autofocus
-          placeholder="Name"
-          required
-        >
-      </label>
-
-      <label class="products-modal__field">
-        <input
-          class="products-modal__input"
-          type="tel"
-          name="tel"
-          id="tel"
-          placeholder="Phone"
-          required
-        >
-      </label>
-
-      <label class="products-modal__field">
-        <textarea
-          class="products-modal__textarea"
-          name="comment"
-          id="comment"
-          placeholder="Comment"></textarea>
-      </label>
-      <button class="products-modal__btn" type="submit">Submit</button>
-    </form>
-  </div>
-</div>
+            <label class="products-modal__field">
+              <textarea
+                class="products-modal__textarea"
+                name="comment"
+                id="comment"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+            <button class="products-modal__btn grow-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>

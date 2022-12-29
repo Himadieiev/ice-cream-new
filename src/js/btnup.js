@@ -6,6 +6,8 @@ $(window).scroll(function() {
         $('#back2Top').fadeOut();
     }
 });
+
+
 $(document).ready(function() {
     $("#back2Top").click(function(event) {
         event.preventDefault();

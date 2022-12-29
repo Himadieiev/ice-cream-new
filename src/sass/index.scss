@@ -1,19 +1,22 @@
-@import './utils/vars';
 @import './common';
-@import './base/reset';
+
+@import './utils/vars';
 @import './base/commons';
-@import './components/header';
-@import './components/hero';
-@import './components/products';
+@import './base/reset';
+
 @import './components/about';
 @import './components/advantages';
-@import './components/gallery';
-@import './components/customer-reviews';
-@import './components/contacts';
-@import './components/footer';
+@import './components/button-up';
 @import './components/buy-now-modal';
-@import './components/ingredients-modal';
-@import './components/read-more-modal';
-@import './components/our-location-modal';
+@import './components/contacts';
+@import './components/customer-reviews';
+@import './components/footer';
 @import './components/franchise-modal';
+@import './components/gallery';
+@import './components/header-test';
+@import './components/hero';
+@import './components/ingredients-modal';
+@import './components/our-location-modal';
+@import './components/products';
+@import './components/read-more-modal';
 @import './components/button-up';
