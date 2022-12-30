@@ -26,19 +26,18 @@
 }
 
 .read-more__close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  @extend %close-modal-btn;
+}
 
+.close-icon-mob {
   @media screen and (min-width: 768px) {
-    width: 24px;
-    height: 24px;
+    display: none;
+  }
+}
+
+.close-icon-tab {
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 
