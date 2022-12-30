@@ -5,15 +5,21 @@
     <div class="backdrop is-hidden" data-modal-by-now>
       <div class="modal-form">
         <button class="modal-form__close" data-modal-by-now-close>
-          <svg width="20" height="20">
-            <use href="/src/images/symbol-defs.svg#icon-close-btn"></use>
+          <svg class="close-icon close-icon-mob" width="20" height="20">
+            <use href="/src/images/symbol-defs.svg#modal-close-btn-mobile"></use>
+          </svg>
+          <svg class="close-icon close-icon-tab" width="24" height="24">
+            <use href="/src/images/symbol-defs.svg#modal-close-btn-tablet"></use>
           </svg>
         </button>
         <p class="modal-form__title">Buy now</p>
-        <ul class="modal-form__cards">
-          <li class="modal-form__ice-card modal-form__ice-card--icecream">
-            <a class="modal-form__link" href="#">
-              <div class="modal-form__box modal-form__box--icecream">
+
+        <form>
+          <div class="buy-now__checkbox-field">
+            <label class="buy-check">
+              <input class="check__input" type="checkbox" />
+              <span class="check__box">
+                <div class="modal-form__box modal-form__box--icecream">
                 <img
                   srcset="
                     images/modal/mob-buy-now-1@1x.png 1x,
@@ -25,58 +31,70 @@
                   alt="Icecream"
                 />
               </div>
-
-              ice cream
-            </a>
-          </li>
-          <li class="modal-form__ice-card modal-form__ice-card--icecoffe">
-            <a class="modal-form__link" href="#">
-              <div class="modal-form__box modal-form__box--icecoffe">
-                <img
-                  srcset="
-                    images/modal/mob-buy-now-2@1x.png 1x,
-                    images/modal/mob-buy-now-2@2x.png 2x
-                  "
-                  src="images/modal/mob-buy-now-2@1x.png"
-                  width="132"
-                  height="132"
-                  alt="Icecream"
-                />
-              </div>
-
-              ice coffee
-            </a>
-          </li>
-          <li class="modal-form__ice-card modal-form__ice-card--milkshake">
-            <a class="modal-form__link" href="#">
-              <div class="modal-form__box modal-form__box--milkshake">
-                <img
-                  srcset="
-                    images/modal/mob-buy-now-3@1x.png 1x,
-                    images/modal/mob-buy-now-3@2x.png 2x
-                  "
-                  src="images/modal/mob-buy-now-3@1x.png"
-                  width="132"
-                  height="132"
-                  alt="Icecream"
-                />
-              </div>
-
-              milkshake
-            </a>
-          </li>
-        </ul>
-        <form>
+            </span>
+            
+              <span class="check-box__label">ice cream</span>
+            </label>
+            <label class="buy-check">
+              <input class="check__input" type="checkbox" checked />
+              
+              <span class="check__box">
+                <div class="modal-form__box modal-form__box--icecoffe">
+                  <img
+                    srcset="
+                      images/modal/mob-buy-now-2@1x.png 1x,
+                      images/modal/mob-buy-now-2@2x.png 2x
+                    "
+                    src="images/modal/mob-buy-now-2@1x.png"
+                    width="132"
+                    height="132"
+                    alt="Icecream"
+                  />
+                </div>
+              </span>
+              <span class="check-box__label">ice coffee</span>
+              
+            </label>
+            <label class="buy-check">
+              <input class="check__input" type="checkbox" />
+              <span class="check__box">
+                <div class="modal-form__box modal-form__box--icecoffe">
+                  <img
+                    srcset="
+                      images/modal/mob-buy-now-3@1x.png 1x,
+                      images/modal/mob-buy-now-3@2x.png 2x
+                    "
+                    src="images/modal/mob-buy-now-3@1x.png"
+                    width="132"
+                    height="132"
+                    alt="Icecream"
+                  />
+                </div>
+              </span>
+              <span class="check-box__label">milkshake</span>
+              
+            </label>
+          </div>
           <div class="boxes">
             <div class="modal-form__field">
               <label class="modal-form__label">
-                <input class="modal-form__input" type="text" name="name" placeholder="Name" />
+                <input
+                  class="modal-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
               </label>
             </div>
 
             <div class="modal-form__field">
               <label class="modal-form__label">
-                <input class="modal-form__input" type="tel" name="tel" placeholder="Phone" />
+                <input
+                  class="modal-form__input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Phone"
+                />
               </label>
             </div>
 
@@ -91,7 +109,11 @@
             </div>
           </div>
 
-          <button class="modal-form__button grow-btn" type="submit" data-modal-by-now-open1>
+          <button
+            class="modal-form__button"
+            type="submit"
+            data-modal-by-now-open1
+          >
             Submit
           </button>
         </form>
@@ -99,4 +121,3 @@
     </div>
   </div>
 </section>
-

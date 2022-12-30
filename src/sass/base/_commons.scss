@@ -105,3 +105,31 @@ body {
   box-shadow: inset 1px 1px 3px 0px rgba(227, 241, 30, 0.4);
 }
 
+%close-modal-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: transform $tr-delay $tr-timing-function;
+    &:hover {
+      transform: scale(1.2);
+    }
+}
+
+.close-icon-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.close-icon-tab {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
