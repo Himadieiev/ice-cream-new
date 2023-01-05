@@ -76,22 +76,7 @@
 }
 
 .modal-icon {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  
-  height: 20px;
-  &:hover .modal-icon-close,
-  &:focus .modal-icon-close {
-    fill: $second-txcolor;
-    cursor: pointer;
-  }
+  @extend %close-modal-btn;
 }
 
 .products-modal__thumb {
