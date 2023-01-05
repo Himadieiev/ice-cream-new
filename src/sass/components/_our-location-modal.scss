@@ -130,15 +130,7 @@
 }
 
 .modal-close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  border: none;
-  background: inherit;
-  fill: $second-txcolor;
-  &:hover {
-    cursor: pointer;
-  }
+  @extend %close-modal-btn;
 }
 
 .iframe {
