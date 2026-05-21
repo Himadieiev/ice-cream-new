@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
   font-family: "Montserrat", sans-serif;
@@ -130,7 +129,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-/* reset */
 h1,
 h2,
 h3,
@@ -632,25 +630,15 @@ address {
   z-index: 100;
   position: fixed;
   background-color: #EFD478;
-  /* расстояние от правого края окна браузера */
   right: 20px;
-  /* расстояние от нижнего края окна браузера */
   bottom: 0;
-  /* скругление верхнего левого угла */
   border-top-left-radius: 8px;
-  /* скругление верхнего правого угла */
   border-top-right-radius: 8px;
-  /* вид курсора */
   cursor: pointer;
-  /* отображение элемента как flex */
   display: flex;
-  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
   align-items: center;
-  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
   justify-content: center;
-  /* ширина элемента */
   width: 60px;
-  /* высота элемента */
   height: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -675,7 +663,7 @@ address {
 
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
-    background-color: #0A8817; /* цвет заднего фона при наведении */
+    background-color: #0A8817;
     transform: scale(1.1);
     transition: 350ms;
   }
@@ -711,7 +699,6 @@ ul {
   }
 }
 
-/* Check */
 .buy-check {
   position: relative;
   display: block;
@@ -772,7 +759,6 @@ ul {
   border-color: #D6936D;
 }
 
-/* Checked */
 .check__input:checked + .check__box {
   background-color: #EFD478;
 }
@@ -797,7 +783,6 @@ ul {
   transform: scale(1.1);
 }
 
-/* Focused */
 .check__input:focus + .check__box {
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
@@ -3452,25 +3437,15 @@ ul {
   z-index: 100;
   position: fixed;
   background-color: #EFD478;
-  /* расстояние от правого края окна браузера */
   right: 20px;
-  /* расстояние от нижнего края окна браузера */
   bottom: 0;
-  /* скругление верхнего левого угла */
   border-top-left-radius: 8px;
-  /* скругление верхнего правого угла */
   border-top-right-radius: 8px;
-  /* вид курсора */
   cursor: pointer;
-  /* отображение элемента как flex */
   display: flex;
-  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
   align-items: center;
-  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
   justify-content: center;
-  /* ширина элемента */
   width: 60px;
-  /* высота элемента */
   height: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -3495,7 +3470,7 @@ ul {
 
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
-    background-color: #0A8817; /* цвет заднего фона при наведении */
+    background-color: #0A8817;
     transform: scale(1.1);
     transition: 350ms;
   }
