@@ -2300,14 +2300,14 @@ ul {
 }
 
 .hollow-button__hero {
-  border: 2px solid #f8d24e;
+  border: 2px solid #F8D24E;
   border-radius: 10px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28571;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 1199px) {
   .hollow-button__hero {
@@ -2327,13 +2327,13 @@ ul {
 }
 
 .hollow-button__hero:hover {
-  fill: currentColor;
+  background-color: #F8D24E;
   border-color: #0A8817;
+  color: #0A8817;
 }
 
 .hollow-button__hero:focus {
   color: #FCFCFC;
-  fill: currentColor;
   border-color: #0A8817;
 }
 
@@ -2345,7 +2345,11 @@ ul {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   text-decoration-line: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-text:hover {
@@ -2393,6 +2397,7 @@ ul {
 @media screen and (min-width: 768px) {
   .hero_ic--left {
     display: block;
+    border-radius: 50%;
   }
 }
 
@@ -2545,8 +2550,11 @@ ul {
   padding-left: 0;
   margin-bottom: 12px;
 }
-.arrow__btn:hover, .arrow__btn:focus {
-  fill: #0A8817;
+.arrow__btn svg {
+  transition: transform 0.3s ease;
+}
+.arrow__btn svg:hover, .arrow__btn svg:focus {
+  transform: translateX(5px);
 }
 
 @media screen and (max-width: 768px) {
