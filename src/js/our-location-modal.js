@@ -1,26 +1,22 @@
-
-
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-location-open]"),
-      closeModalBtn: document.querySelector("[data-modal-location-close]"),
-      modal: document.querySelector("[data-modal-location]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-location-open]'),
+    closeModalBtn: document.querySelector('[data-modal-location-close]'),
+    modal: document.querySelector('[data-modal-location]'),
+  };
 
-    window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
   }
 
-    
-  })();
-
-
+  window.onclick = function (event) {
+    if (event.target == refs.modal) {
+      if (refs.modal) {
+        refs.modal.style.display = 'none';
+      }
+    }
+  };
+})();

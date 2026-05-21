@@ -45,6 +45,7 @@ body {
   &:hover {
     background-color: $hover-focus-color;
   }
+
   &:focus {
     color: $sixth-txcolor;
     background-color: $hover-focus-color;
@@ -67,6 +68,7 @@ body {
   &:hover {
     border: 2px solid $hover-focus-color;
   }
+
   &:focus {
     color: $sixth-txcolor;
     border: 2px solid $hover-focus-color;
@@ -106,20 +108,21 @@ body {
 }
 
 %close-modal-btn {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 12px;
-    right: 12px;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    transition: transform $tr-delay $tr-timing-function;
-    &:hover {
-      transform: scale(1.2);
-    }
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 12px;
+  right: 12px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  transition: transform $tr-delay $tr-timing-function;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .close-icon-mob {
@@ -132,4 +135,8 @@ body {
   @media screen and (max-width: 768px) {
     display: none;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
