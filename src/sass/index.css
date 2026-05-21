@@ -42,7 +42,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   color: #000000;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-one:hover {
   background-color: #0A8817;
@@ -61,7 +61,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   color: #000000;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-two:hover {
   border: 2px solid #0A8817;
@@ -2979,29 +2979,19 @@ ul {
   }
 }
 
-.locations__button-map.btn-two {
-  display: block;
-  align-items: center;
-  text-align: center;
-  height: 42px;
-  padding: 12px 34px;
-  font-size: 12px;
-  line-height: 1.25;
-  color: #131313;
-  background: #F8D24E;
-  border-radius: 10px;
-}
-@media screen and (min-width: 768px) {
-  .locations__button-map.btn-two {
-    width: 145px;
-  }
-}
-
 .location-link {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 42px;
+  padding: 12px 34px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #131313;
+  background: #F8D24E;
+  border-radius: 10px;
 }
 
 .products {

@@ -40,7 +40,7 @@ body {
   cursor: pointer;
   color: $seventh-txcolor;
 
-  transition: background-color $tr-delay $tr-timing-function;
+  transition: all $tr-delay $tr-timing-function;
 
   &:hover {
     background-color: $hover-focus-color;
@@ -63,7 +63,7 @@ body {
   cursor: pointer;
   color: $seventh-txcolor;
 
-  transition: background-color $tr-delay $tr-timing-function;
+  transition: all $tr-delay $tr-timing-function;
 
   &:hover {
     border: 2px solid $hover-focus-color;

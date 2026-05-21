@@ -139,26 +139,17 @@
   }
 }
 
-.locations__button-map.btn-two {
-  display: block;
-  align-items: center;
-  text-align: center;
-  height: 42px;
-  padding: 12px 34px;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $second-txcolor;
-  background: $fifth-bgcolor;
-  border-radius: 10px;
-
-  @media screen and (min-width: 768px) {
-    width: 145px;
-  }
-}
-
 .location-link {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 42px;
+  padding: 12px 34px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: $second-txcolor;
+  background: $fifth-bgcolor;
+  border-radius: 10px;
 }
