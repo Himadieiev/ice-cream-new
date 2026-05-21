@@ -1,2 +1,0 @@
-!function(){var e={openModalBtn1:document.querySelector("[data-modal-ingredients-ice-open]"),closeModalBtn:document.querySelector("[data-modal-ingredients-ice-close]"),modal:document.querySelector("[data-modal-ingredients-ice]")};function n(){e.modal.classList.toggle("is-hidden")}e.openModalBtn1.addEventListener("click",n),e.closeModalBtn.addEventListener("click",n)}();
-//# sourceMappingURL=index.efda4345.js.map
