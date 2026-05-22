@@ -91,8 +91,6 @@
   }
 }
 
-
-
 .products-modal__list {
   justify-content: center;
   gap: 9px;
@@ -104,7 +102,6 @@
     gap: 20px;
     margin-bottom: 48px;
   }
-
 }
 
 .products-modal__item {
@@ -114,7 +111,7 @@
   font-size: 10px;
   line-height: calc(12px/10px);
   color: $second-txcolor;
-  border: 2px solid #9CBE8F;
+  border: 2px solid $sixth-bgcolor;
   border-radius: 40px;
 
   span {
@@ -127,7 +124,7 @@
     font-weight: 500;
     font-size: 10px;
     line-height: calc(28px/10px);
-    background: #9CBE8F;
+    background: $sixth-bgcolor;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
   }
@@ -217,17 +214,14 @@
   border: 1px solid $main-bgcolor;
   border-radius: 10px;
   color: $second-txcolor;
-  transition: border $tr-delay $tr-timing-function;
-
+  transition: all $tr-delay $tr-timing-function;
 
   &:focus {
-    outline: 2px solid #0a8817;
-    border: none;
+    border: 1px solid $hover-focus-color;
   }
 
   &:hover {
-    outline: 2px solid #0a8817;
-    border: none;
+    border: 1px solid $hover-focus-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -245,16 +239,14 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $main-bgcolor;
   border-radius: 10px;
-  transition: border $tr-delay $tr-timing-function;
-
+  transition: all $tr-delay $tr-timing-function;
 
   &:focus {
-    outline: 2px solid #0a8817;
+    border: 1px solid $hover-focus-color;
   }
 
   &:hover {
-    outline: 2px solid #0a8817;
-    border: none;
+    border: 1px solid $hover-focus-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -279,18 +271,19 @@
   text-align: center;
   padding: 12px 34px;
   border-radius: 10px;
-  border: none;
+  border: 2px solid $eighth-txcolor;
   cursor: pointer;
   background-color: $eighth-txcolor;
-  color: $second-txcolor;
-  transition: color $tr-delay $tr-timing-function, background-color $tr-delay $tr-timing-function;
+  color: $seventh-txcolor;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
 
   &:hover {
     background-color: $hover-focus-color;
+    color: $main-txcolor;
   }
 
   &:focus {
-    background-color: $hover-focus-color$hover-focus-color;
-    color: $sixth-txcolor;
+    background-color: $hover-focus-color;
+    color: $main-txcolor;
   }
 }
