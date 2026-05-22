@@ -56,7 +56,7 @@ ul {
   line-height: calc(20px/16px);
   text-align: center;
   letter-spacing: 0.04em;
-  color: #131313;
+  color: $second-txcolor;
   text-transform: uppercase;
 }
 
@@ -72,33 +72,34 @@ ul {
   position: absolute;
   width: 132px;
   height: 135px;
-  border: 2px solid #EFD478;
+  border: 2px solid $third-bgcolor;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
-  background-color: white;
+  background-color: $sixth-txcolor;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: transform $tr-delay $tr-timing-function;
+  cursor: pointer;
 }
 
 .buy-check:first-child .check__box {
-  border-color: #96AF8C;
+  border-color: $sixth-bgcolor;
 }
 
 .buy-check:last-child .check__box {
-  border-color: #D6936D;
+  border-color: $seventh-bgcolor;
 }
 
 .check__input:checked+.check__box {
-  background-color: #EFD478;
+  background-color: $third-bgcolor;
 }
 
 .buy-check:first-child .check__input:checked+.check__box {
-  background-color: #96AF8C;
+  background-color: $sixth-bgcolor;
 }
 
 .buy-check:last-child .check__input:checked+.check__box {
-  background-color: #D6936D;
+  background-color: $seventh-bgcolor;
 }
 
 .check__input:hover+.check__box {
@@ -124,8 +125,8 @@ ul {
   width: 280px;
   padding: 26px 26px 27px 26px;
   border-radius: 10px;
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background-color: $modal-bgcolor;
+  border: 2px solid $fifth-bgcolor;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -160,8 +161,7 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-
-    color: #131313;
+    color: $second-txcolor;
 
     @media screen and (min-width: 768px) {
       font-weight: 400;
@@ -201,7 +201,7 @@ ul {
     line-height: 20px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #131313;
+    color: $second-txcolor;
     margin: 0;
   }
 
@@ -216,10 +216,8 @@ ul {
   &__input {
     height: 32px;
     width: 224px;
-
     padding: 8px 12px;
-
-    border: 1px solid #84a178;
+    border: 1px solid $main-bgcolor;
     border-radius: 10px;
     background: rgba(248, 210, 78, 0.1);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,7 +225,7 @@ ul {
     &:hover,
     &:focus {
       outline: none;
-      border: 1px solid black;
+      border: 1px solid $seventh-txcolor;
     }
 
     @media screen and (min-width: 768px) {
@@ -242,7 +240,6 @@ ul {
     padding: 12px 8px;
     width: 224px;
     height: 65px;
-
     resize: none;
 
     @media screen and (min-width: 768px) {
@@ -259,8 +256,7 @@ ul {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
-
-    color: #131313;
+    color: $second-txcolor;
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -275,27 +271,25 @@ ul {
     outline: none;
     cursor: pointer;
     padding: 12px 34px;
-    background: $eighth-txcolor;
+    background-color: $eighth-txcolor;
     border-radius: 10px;
-
+    border: 2px solid $eighth-txcolor;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
-    color: #131313;
+    color: $second-txcolor;
     margin: 0 auto;
-    border: none;
-    transition: transform $tr-delay $tr-timing-function;
+    transition: all $tr-delay $tr-timing-function;
 
     &:hover {
-      transform: scale(1.1);
       background-color: $hover-focus-color;
+      color: $main-txcolor;
     }
 
     @media screen and (min-width: 768px) {
       padding: 12px 34px;
-
       font-weight: 600;
       font-size: 14px;
       line-height: 1.21;
@@ -317,7 +311,7 @@ ul {
   border-radius: 15px;
 
   &--icecream {
-    border: 2px solid #96af8c;
+    border: 2px solid $sixth-bgcolor;
   }
 
   &--icecoffe {
@@ -326,7 +320,7 @@ ul {
   }
 
   &--milkshake {
-    border: 2px solid #d6936d;
+    border: 2px solid $seventh-bgcolor;
   }
 
   @media screen and (min-width: 768px) {
