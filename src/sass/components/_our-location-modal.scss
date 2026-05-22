@@ -41,6 +41,41 @@
   }
 }
 
+.local-franch__button.btn-one {
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  svg {
+    transition: all .25s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-txcolor;
+
+    svg {
+      fill: $main-txcolor;
+    }
+  }
+}
+
+.local-franch__button.btn-two {
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  svg {
+    transition: all .25s cubic-bezier(.4, 0, .2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-focus-color;
+    background-color: $fifth-bgcolor;
+
+    svg {
+      fill: $hover-focus-color;
+    }
+  }
+}
+
 .local-franch__arrow {
   fill: $seventh-txcolor;
   display: block;
@@ -146,10 +181,17 @@
   align-items: center;
   height: 42px;
   padding: 12px 34px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.25;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
   color: $second-txcolor;
   background: $fifth-bgcolor;
+  border: 2px solid $eighth-txcolor;
   border-radius: 10px;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-txcolor;
+  }
 }

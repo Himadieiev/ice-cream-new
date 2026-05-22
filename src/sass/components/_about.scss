@@ -224,22 +224,24 @@
   color: $seventh-txcolor;
   background-color: $eighth-txcolor;
   border-radius: 10px;
-  border: none;
+  border: 2px solid $eighth-txcolor;
   cursor: pointer;
-  transition: background-color $tr-delay $tr-timing-function,
-    color $tr-delay $tr-timing-function;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  svg {
+    margin-left: 5px;
+    fill: currentColor;
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+  }
 
   &:hover {
     background-color: $hover-focus-color;
+    color: $main-txcolor;
   }
 
   &:focus {
     color: $main-txcolor;
     background-color: $hover-focus-color;
-  }
-
-  &:focus .read-more-icon {
-    fill: $main-txcolor;
   }
 
   &:disabled {

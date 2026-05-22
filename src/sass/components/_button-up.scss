@@ -35,9 +35,6 @@
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
     background-color: $hover-focus-color;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.1);
     transition: 350ms;
   }
 }
