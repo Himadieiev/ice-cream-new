@@ -3,7 +3,7 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: #84a178;
+  background-color: $main-bgcolor;
 
   &__link {
     position: relative;
@@ -13,7 +13,13 @@
     font-size: 16px;
     line-height: 20px;
     align-items: center;
-    color: #fcfcfc;
+    color: $main-txcolor;
+    transition: all .30s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover,
+    &:focus {
+      color: $eighth-txcolor;
+    }
 
     @media screen and (min-width: 1200px) {
       font-weight: 700;
@@ -21,11 +27,6 @@
       line-height: 20px;
       display: flex;
       align-items: center;
-    }
-
-    &:hover,
-    &:focus {
-      color: #f8d24e;
     }
   }
 }
@@ -65,7 +66,7 @@
     font-size: 16px;
     line-height: 20px;
     align-items: center;
-    color: #fcfcfc;
+    color: $main-txcolor;
 
     @media screen and (min-width: 1200px) {
       font-weight: 700;
@@ -77,7 +78,7 @@
 
     &:hover,
     &:focus {
-      color: #f8d24e;
+      color: $eighth-txcolor;
     }
   }
 
@@ -89,7 +90,7 @@
     font-size: 16px;
     line-height: 20px;
     align-items: center;
-    color: #fcfcfc;
+    color: $main-txcolor;
 
     @media screen and (min-width: 1200px) {
       font-weight: 700;
@@ -101,7 +102,7 @@
 
     &:hover,
     &:focus {
-      color: #f8d24e;
+      color: $eighth-txcolor;
     }
   }
 }
@@ -115,10 +116,10 @@
 .logo {
   display: inline-block;
   padding: 12px 0;
-  fill: #f8d24e;
+  fill: $eighth-txcolor;
 }
 
-.mobile-menu__test {
+.mobile-menu__controls {
   display: flex;
   align-items: center;
   z-index: 12;
@@ -163,7 +164,7 @@
 .burger-menu::before,
 .burger-menu::after {
   content: '';
-  background: #ffffff;
+  background: $modal-bgcolor;
   position: absolute;
   width: 100%;
   height: 3.6px;
@@ -183,16 +184,16 @@
 
 .burger-menu-item {
   position: absolute;
-  background: #ffffff;
+  background: $modal-bgcolor;
   width: 100%;
   height: 3.6px;
   left: 0;
-  top: 16.2px;
+  top: 13px;
   border-radius: 40px;
 }
 
 .menu {
-  background-color: #84a178;
+  background-color: $main-bgcolor;
   flex-direction: column;
   align-items: center;
   pointer-events: none;
@@ -246,6 +247,16 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $main-txcolor;
+  transition: all .30s cubic-bezier(.4, 0, .2, 1);
+
+  &:hover,
+  &:focus {
+    color: $second-txcolor;
+  }
 
   @media screen and (min-width: 768px) {
     font-style: normal;
@@ -255,16 +266,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-  }
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fcfcfc;
-
-  &:hover,
-  &:focus {
-    color: #131313;
   }
 }
 
@@ -281,19 +282,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8d24e;
-  border: 2px solid #f8d24e;
+  background-color: $third-bgcolor;
+  border: 2px solid $eighth-txcolor;
   border-radius: 10px;
   cursor: pointer;
-  color: #000000;
+  color: $seventh-txcolor;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  svg {
+    margin-left: 5px;
+    fill: currentColor;
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+  }
 
   &:hover {
-    background-color: #0a8817;
+    background-color: $hover-focus-color;
+    color: $main-txcolor;
   }
 
   &:focus {
-    color: #fcfcfc;
-    background-color: #0a8817;
+    color: $main-txcolor;
+    background-color: $hover-focus-color;
   }
 
   @media screen and (max-width: 767px) {
@@ -315,23 +324,31 @@
   border-radius: 10px;
   border: none;
   height: 42px;
-  min-width: 152px;
+  width: 152px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8d24e;
-  border: 2px solid #f8d24e;
+  background-color: $third-bgcolor;
+  border: 2px solid $eighth-txcolor;
   border-radius: 10px;
   cursor: pointer;
-  color: #000000;
+  color: $seventh-txcolor;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+
+  svg {
+    margin-left: 5px;
+    fill: currentColor;
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+  }
 
   &:hover {
-    background-color: #0a8817;
+    background-color: $hover-focus-color;
+    color: $main-txcolor;
   }
 
   &:focus {
-    color: #fcfcfc;
-    background-color: #0a8817;
+    color: $main-txcolor;
+    background-color: $hover-focus-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -343,7 +360,7 @@
   }
 }
 
-.test {
+.mobile-menu__group {
   display: flex;
   align-items: center;
   justify-content: space-between;
