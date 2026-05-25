@@ -1,14 +1,21 @@
-# Ice Cream Shop
+<div align="center">
+  <h1 align="center">Ice Cream</h1>
 
-[![GitHub Pages](https://img.shields.io/badge/deployed-GitHub%20Pages-blue)](https://Himadieiev.github.io/ice-cream-new)
+  <div>
+  <img src="https://img.shields.io/badge/-HTML5-black?style=for-the-badge&logoColor=white&logo=html5&color=E34F26" alt="html5" />
+  <img src="https://img.shields.io/badge/-SCSS-black?style=for-the-badge&logoColor=white&logo=sass&color=CC6699" alt="sass" />
+  <img src="https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logoColor=white&logo=javascript&color=F7DF1E" alt="javascript" />
+  <img src="https://img.shields.io/badge/-Parcel-black?style=for-the-badge&logoColor=white&logo=parcel&color=766CAB" alt="parcel" />
+  <img src="https://img.shields.io/badge/-Swiper-black?style=for-the-badge&logoColor=white&logo=swiper&color=6332F6" alt="swiper" />
+  <img src="https://img.shields.io/badge/-PostHTML-black?style=for-the-badge&logoColor=white&logo=posthtml&color=5E9C4B" alt="posthtml" />
+  <img src="https://img.shields.io/badge/-GitHub_Pages-black?style=for-the-badge&logoColor=white&logo=githubpages&color=222222" alt="github pages" />
+ </div>
+</div>
+
+## About
 
 Landing page for an ice cream shop. Adaptive design, modal windows, mobile menu,
 Swiper slider.
-
-## Preview
-
-**Live demo:**
-[Himadieiev.github.io/ice-cream-new](https://Himadieiev.github.io/ice-cream-new)
 
 ## Tech stack
 
@@ -18,6 +25,11 @@ Swiper slider.
 - Swiper (reviews slider)
 - Modern normalize
 - PostHTML (includes)
+
+## Preview
+
+**Live demo:**
+[Himadieiev.github.io/ice-cream-new](https://Himadieiev.github.io/ice-cream-new)
 
 ## Quick start
 
@@ -31,22 +43,6 @@ npm start
 
 npm run build
 ```
-
-## Dependencies
-
-- `modern-normalize` - CSS reset
-- `swiper` - Touch slider for reviews
-
-## Dev dependencies
-
-- `parcel` - Module bundler
-- `@parcel/transformer-sass` - SCSS support
-- `posthtml-include` - HTML partials support
-- `parcel-reporter-clean-dist` - Clean dist folder before build
-
-## Browser support
-
-> 0.5%, last 2 versions, not dead
 
 ## License
 
